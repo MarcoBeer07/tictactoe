@@ -6,6 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 table {
@@ -82,13 +85,18 @@ table tr td:last-child {
     opacity: 0.5;
 }
 
+.game-box {
+    position: relative;
+}
+
 .horizontal-line {
     position: absolute;
-    width: 350px;
+    width: 410px;
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     transform: scaleX(0.0);
     transition: transform 225ms ease-in-out;
+    z-index: 2;
 }
 
 .make-vertical {
@@ -97,5 +105,44 @@ table tr td:last-child {
 }
 
 .more-width {
-    width: 460px;
+    width: 530px;
+}
+
+.game-over {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.restart-btn {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 60px;
+    background-color: #1c0b7f;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 200px;
+    z-index: 4;
+}
+
+.restart-btn:hover {
+    background-color: #2a14a3;
 }
