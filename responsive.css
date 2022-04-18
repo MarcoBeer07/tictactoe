@@ -1,0 +1,48 @@
+        @media (max-width: 1000px) {
+            body {
+                width: 100%;
+            }
+            .headline {
+                font-size: 18px;
+            }
+            .game-box {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .player-panel {
+                font-size: 16px;
+            }
+            .player-panel img {
+                width: 50px;
+                height: 50px;
+            }
+            .game-over {
+                width: 100%;
+                top: 20%;
+                left: 0%;
+            }
+            .restart-btn {
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                z-index: 2;
+                width: 150px;
+                height: 70px;
+                color: white;
+                font-size: 30px;
+                background-color: rgb(49, 235, 49);
+                cursor: pointer;
+                border-radius: 10px;
+                position: absolute;
+                bottom: 15%;
+                z-index: 4;
+            }
+            .shape {
+                position: absolute;
+                top: 20%;
+                bottom: 0;
+                left: 16%;
+                right: 0;
+                width: 80px;
+                height: 80px;
+            }
+        }
