@@ -81,3 +81,21 @@ table tr td:last-child {
 .player-inactive {
     opacity: 0.5;
 }
+
+.horizontal-line {
+    position: absolute;
+    width: 350px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scaleX(0.0);
+    transition: transform 225ms ease-in-out;
+}
+
+.make-vertical {
+    transform: rotate(90deg);
+    transform: scaleX(0.0);
+}
+
+.more-width {
+    width: 460px;
+}
